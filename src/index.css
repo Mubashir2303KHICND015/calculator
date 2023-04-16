@@ -1,13 +1,86 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  height: 100vh;
+  background: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.screen {
+  background-color: #222831;
+  border-radius: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.screen-text {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wrapper{
+  background: #000000;
+  width: 20rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  box-shadow: 12px 16px 15px -3px rgba(0,0,0,0.1);
+}
+
+.btnBox{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: .5rem;
+}
+
+.btn{
+  background: #e9f0f4;
+  height: 3.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #242424;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.btn:active{
+  transform: translateY(4px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.answer{
+  background: #4bd086;
+}
+
+.operator{
+  background: #19A7CE;
+}
+
+.clear{
+  background: #FC2947;
+  color: #e9f0f4;
 }
